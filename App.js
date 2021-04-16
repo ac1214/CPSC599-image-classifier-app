@@ -35,7 +35,7 @@ export default function App() {
       }),
     };
     // Modify the url below to the IP address of the machine which you are running the webserver
-    let response = await fetch("http://192.168.1.72:9999/classify_image", data);
+    let response = await fetch("http://192.168.1.72:19876/classify_image", data);
     return await response.json();
   }
 
@@ -121,10 +121,10 @@ export default function App() {
                 position: 'absolute',
                 marginTop: 'auto',
                 backgroundColor: "transparent",
-                width: "100%",
+                width: "50%",
               }}
             >
-              <Icon name="circle" size={80} type="entypo" color="#149414" />
+              <Icon name="camera-outline" size={80} type="material-community" color="#ffffff" />
             </View>
           </TouchableOpacity>
         </View>
